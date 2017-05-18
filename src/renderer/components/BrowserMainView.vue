@@ -3,6 +3,7 @@
     #nav
       tabs(ref="tabs")
       navbar(ref="navbar")
+      toolbar(ref="toolbar")
     swipeArrow
     page(v-for="(page, index) in pages", :isActive="index == currentPageIndex", :pageIndex="index", :ref="`page-${index}`", :key="`page-${page.pid}`")
     #footer
@@ -16,6 +17,7 @@
 
   import Tabs from 'components/BrowserMainView/Tabs';
   import Navbar from 'components/BrowserMainView/Navbar';
+  import Toolbar from 'components/BrowserMainView/Toolbar';
   import swipeArrow from 'components/BrowserMainView/SwipeArrow';
   import Page from 'components/BrowserMainView/Page';
   import Download from 'components/BrowserMainView/Download';
@@ -57,6 +59,7 @@
     components: {
       Tabs,
       Navbar,
+      Toolbar,
       swipeArrow,
       Page,
       Download,

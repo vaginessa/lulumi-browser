@@ -503,7 +503,6 @@
     padding: 0 5px;
     font-size: 15px;
     font-weight: 100;
-    border-bottom: 1px solid #aaa;
 
     a {
       flex: 1;
